@@ -15,8 +15,56 @@
         <a href="./accounting.html"><button> Accounting</button></a><br>
     </header>
     <main>
-        <h2>Employee Information </h2>
-        <script src="./js/app.js"></script> 
+        
+         
+
+        <form id="employeeForm">
+            <fieldset>
+                <legend>Add an employee :</legend>
+                <div>
+                    <label for="fullName" id="fullName">Name :</label>
+                    <input type="text" id="fullName" name="fullName">
+
+                    <br>
+                    <br>
+
+                    <label for="department" id="department">Department :</label>
+                    <select id="department" name="department">
+                        <option value="Administration">Administration</option>
+                        <option value="Marketing">Marketing
+                        <option>
+                        <option value="Development">Development</option>
+                        <option value="Finance">Finance</option>
+                    </select>
+
+                    <br>
+                    <br>
+
+                    <label for="level" id="level">Level :</label>
+                    <select id="level" name="level">
+                        <option value="Junior">Junior</option>
+                        <option value="Mid-Senior">Mid-Senior
+                        <option>
+                        <option value="Senior">Senior</option>
+                    </select>
+
+                    <br>
+                    <br>
+
+                    <label for="imgURL" id="imgURL">ImageURL :</label>
+                    <input type="text" id="imgURL" name="imgURL">
+
+                    <br>
+                    <br>
+                    <input type="submit" value="Add a new employee" />
+                </div>
+            </fieldset>
+            <section id='Employees'>
+                <h3> </h3>
+             </section>
+        </form>
+        
+        <script src="./js/app.js"></script>
     </main>
     <footer>
         <p> &copy; Hind </p>
